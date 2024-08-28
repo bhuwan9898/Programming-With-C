@@ -1,0 +1,3 @@
+/Users/bhuwanbhandari/CLionProjects/firstCProgram/cmake-build-debug/CMakeFiles/firstCProgram.dir
+/Users/bhuwanbhandari/CLionProjects/firstCProgram/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/bhuwanbhandari/CLionProjects/firstCProgram/cmake-build-debug/CMakeFiles/rebuild_cache.dir
