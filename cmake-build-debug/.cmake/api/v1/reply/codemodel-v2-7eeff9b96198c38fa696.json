@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "firstCProgram",
+					"name" : "firstAssignment",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "firstCProgram::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-firstCProgram-Debug-7e5891ce7c8369e78217.json",
-					"name" : "firstCProgram",
+					"id" : "firstAssignment::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-firstAssignment-Debug-264a282023fd78a76924.json",
+					"name" : "firstAssignment",
 					"projectIndex" : 0
 				}
 			]

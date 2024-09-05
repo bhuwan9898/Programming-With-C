@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.29)
-project(firstCProgram)
+project(firstAssignment C)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(firstCProgram main.cpp)
+add_executable(firstAssignment main.c)

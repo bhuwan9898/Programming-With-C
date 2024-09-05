@@ -1,91 +1,54 @@
-# C Programming Journey 🚀
+# Rotation Cipher Encryption Program
 
-Welcome to my C Programming Journey repository! This is where I'll be documenting my progress as I explore the world of C, a foundational programming language widely used for system programming, embedded systems, and more.
+## Description
 
-## 🌟 Introduction
+This C program implements a rotation cipher encryption algorithm on text files. It's designed to encrypt letters in the input file using a variable rotation based on their position, while leaving non-alphabetic characters unchanged. The program also generates a report with statistics about the encryption process.
 
-C is a powerful, high-performance programming language that has been the backbone of software development for decades. Known for its efficiency and control over system resources, C is often used in operating systems, game development, and hardware programming. Mastering C provides a solid foundation for learning other languages and understanding how computers work at a low level.
+## Features
 
-## 📚 Course Overview
+- Encrypts letters using a rotation cipher with a variable key (k) that cycles from 1 to 5
+- Preserves whitespace, digits, and punctuation
+- Allows user to specify two special characters that increment the rotation key
+- Generates a formatted report with encryption statistics
 
-I'll be following a structured approach to learning C, covering the following topics:
+## How it works
 
-### Getting Started with C
-- Setting up the development environment
-- Writing your first C program
-- Understanding C syntax and structure
+1. The program prompts the user for:
+    - Input file name
+    - Output file name
+    - Two special characters (digits or punctuation)
 
-### Data Types and Variables
-- Primitive data types (int, char, float, etc.)
-- Variable declarations and initializations
-- Constants and literals
+2. It reads the input file character by character, applying the following rules:
+    - Letters are encrypted by rotating them 'k' positions (k cycles from 1 to 5)
+    - Whitespace resets k to 1
+    - The two special characters increment k
+    - Non-alphabetic characters are left unchanged
 
-### Control Flow
-- Conditional statements (if, else, switch)
-- Looping structures (for, while, do-while)
+3. The encrypted text is written to the output file
 
-### Functions
-- Defining and calling functions
-- Passing arguments to functions
-- Returning values from functions
-- Recursion
+4. A report is generated with the following information:
+    - Input and output file names
+    - Number of letters processed
+    - Percentage of the file that was changed
+    - Average distance that the letters were changed
 
-### Pointers and Memory Management
-- Introduction to pointers
-- Pointer arithmetic
-- Dynamic memory allocation (malloc, free)
-- Understanding and avoiding memory leaks
+## Usage
 
-### Arrays and Strings
-- Working with arrays
-- Multi-dimensional arrays
-- Strings and string manipulation functions
+1. Compile the program using a C compiler (e.g., gcc)
+2. Run the executable
+3. Follow the prompts to enter the required information
+4. Check the output file for the encrypted text and the console for the report
 
-### Structures and Unions
-- Defining and using structures
-- Nested structures
-- Unions and their use cases
+## Requirements
 
-### File Handling
-- Reading from and writing to files
-- File pointers and file operations
-- Working with binary files
+- C compiler (e.g., GCC)
+- Standard C libraries: stdio.h, ctype.h
 
-### Advanced Topics
-- Bitwise operators
-- Preprocessor directives and macros
-- Debugging and error handling
-- Working with command-line arguments
+## Notes
 
-## 🎯 Goals
-- Gain a deep understanding of C programming fundamentals.
-- Develop efficient and optimized code.
-- Build a series of projects to apply what I've learned.
-- Create a portfolio of C-based applications and utilities.
+- The program ensures that the rotation wraps around the alphabet (e.g., 'z' + 2 becomes 'b')
+- Special care is taken to handle edge cases and ensure proper character casting
 
-## 🌱 Progress Tracking
+## Author
 
-I'll be updating this repository with:
-
-- **Code snippets**: Small exercises and examples as I learn.
-- **Mini-projects**: To solidify my understanding of key concepts.
-- **Notes and resources**: Useful references and tips.
-- **Challenges**: Problems and solutions as I work through various tasks.
-
-## 🚀 Future Plans
-
-After completing the foundational course, I plan to:
-
-- Explore system-level programming and operating system development.
-- Contribute to open-source C projects.
-- Learn C++ to build on the knowledge gained from C.
-
-## 🛠 Tools & Technologies
-- **GCC**: The GNU Compiler Collection for compiling C programs.
-- **VSCode**: My preferred code editor.
-- **GDB**: The GNU Debugger for debugging C programs.
-- **Makefile**: For automating the build process.
-
-## 🤝 Contributions
-
-This repository is primarily for my learning, but if you have suggestions, resources, or tips, feel free to contribute! I'm always open to feedback and collaboration.
+Bhuwan Bhandari
